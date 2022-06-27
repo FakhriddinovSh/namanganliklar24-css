@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Namanganliklar24</title>
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/main.min.css">
-    <!-- <link rel="stylesheet" href="./css/main.css"> -->
+    <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -156,7 +156,7 @@
                     <h2>Хотите быть в курсе свежих новостей? Включите уведомления!
                     </h2>
                 </div>
-                <a class="notification__button" href="#">Включит </a>
+                <button type="button" class="notification__button js-modal-open-button">Включит </button>
             </div>
         </article>
         <!-- Article section finished -->
@@ -356,6 +356,23 @@
         </div>
     </footer>
     <!-- Footer finished -->
+
+    <div class="modal">
+        <div class="modal-contents">
+            <div class="modal-title">
+                <h2>
+                    Хотите быть в курсе свежих новостей?  Включите уведомления!
+                </h2>
+            </div>
+            <div class="modal-button">
+                <button type="button" class="notification__button" >Включит </button>
+            </div>
+            <button class="modal-off">X</button>
+        </div>
+    </div>
+
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
